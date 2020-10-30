@@ -22,11 +22,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        dlgBuscarValor = new javax.swing.JDialog();
-        lblValor = new javax.swing.JLabel();
-        txtValor = new javax.swing.JTextField();
-        btnBuscarValorDialog = new javax.swing.JButton();
-        btnCancelar = new javax.swing.JButton();
         pnlOrdemMatriz = new javax.swing.JPanel();
         lblOrdemMatr = new javax.swing.JLabel();
         lblLinhas = new javax.swing.JLabel();
@@ -46,7 +41,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         btnSomaLinhas = new javax.swing.JButton();
         btnSomaColunas = new javax.swing.JButton();
         btnTransposta = new javax.swing.JButton();
-        btnBuscaValor = new javax.swing.JButton();
         btnSomaTotal = new javax.swing.JButton();
         btnGerarMatriz = new javax.swing.JButton();
         btnTrocarValores = new javax.swing.JButton();
@@ -54,56 +48,9 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         btnMaiorValor = new javax.swing.JButton();
         btnSubstituirValores = new javax.swing.JButton();
         btnSimetrica = new javax.swing.JButton();
-
-        dlgBuscarValor.setSize(new java.awt.Dimension(254, 171));
-
-        lblValor.setText("Insira um valor:");
-
-        btnBuscarValorDialog.setText("Buscar");
-        btnBuscarValorDialog.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarValorDialogActionPerformed(evt);
-            }
-        });
-
-        btnCancelar.setText("Cancelar");
-        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout dlgBuscarValorLayout = new javax.swing.GroupLayout(dlgBuscarValor.getContentPane());
-        dlgBuscarValor.getContentPane().setLayout(dlgBuscarValorLayout);
-        dlgBuscarValorLayout.setHorizontalGroup(
-            dlgBuscarValorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dlgBuscarValorLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(dlgBuscarValorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dlgBuscarValorLayout.createSequentialGroup()
-                        .addComponent(lblValor)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(dlgBuscarValorLayout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(btnBuscarValorDialog)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCancelar)))
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
-        dlgBuscarValorLayout.setVerticalGroup(
-            dlgBuscarValorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dlgBuscarValorLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(dlgBuscarValorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblValor)
-                    .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(dlgBuscarValorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscarValorDialog)
-                    .addComponent(btnCancelar))
-                .addContainerGap(46, Short.MAX_VALUE))
-        );
+        lblValor1 = new javax.swing.JLabel();
+        txtValor = new javax.swing.JTextField();
+        btnBuscarValor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -237,13 +184,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
             }
         });
 
-        btnBuscaValor.setText("Busca Valor");
-        btnBuscaValor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscaValorActionPerformed(evt);
-            }
-        });
-
         btnSomaTotal.setText("Somar Tudo");
         btnSomaTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,7 +250,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
                             .addComponent(btnSomaLinhas)
                             .addComponent(btnSomaColunas)
                             .addComponent(btnTransposta)
-                            .addComponent(btnBuscaValor)
                             .addComponent(btnSomaTotal)
                             .addComponent(btnGerarMatriz)
                             .addComponent(btnTrocarValores)
@@ -340,8 +279,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnTransposta)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnBuscaValor)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnTrocarValores)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnPares)
@@ -351,8 +288,17 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
                 .addComponent(btnSubstituirValores)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSimetrica)
-                .addContainerGap())
+                .addGap(46, 46, 46))
         );
+
+        lblValor1.setText("Insira um valor:");
+
+        btnBuscarValor.setText("Buscar");
+        btnBuscarValor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarValorActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -364,7 +310,12 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(splMatriz, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(pnlOrdemMatriz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblValor1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarValor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlOperacoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -380,13 +331,19 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(splMatriz, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(86, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblValor1)
+                            .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarValor)))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+                                                                                                        //txtLinhas           // Linhas
     private Boolean validaTextFieldOrdemMatriz(JTextField textField, String nomeCampo) {
         if (
              textField.getText().isEmpty() || 
@@ -404,7 +361,7 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         }
     }
     
-    private void formataTabela() {
+    private void formataTabela() { // Insere os valores da matriz para a tabela
         tabela = new TabelaModelo(matriz.getMatriz());
         tblMatriz.setModel(tabela);
         Cabecalho cabecalho = new Cabecalho();
@@ -413,11 +370,6 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         tblMatriz.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
     }
     
-    private void btnBuscaValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscaValorActionPerformed
-        dlgBuscarValor.setLocationRelativeTo(pnlOperacoes);
-        dlgBuscarValor.setVisible(true);
-    }//GEN-LAST:event_btnBuscaValorActionPerformed
-
     private void btnDefinirMartizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDefinirMartizActionPerformed
         if (validaTextFieldOrdemMatriz(txtLinhas, "Linhas") && validaTextFieldOrdemMatriz(txtColunas, "Colunas")) {
             int linha = Integer.parseInt(txtLinhas.getText());
@@ -428,17 +380,8 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDefinirMartizActionPerformed
 
     private void btnGerarMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGerarMatrizActionPerformed
-        if (matriz != null) {
-            matriz.setMatriz();
-            formataTabela();  
-        } else {
-            JOptionPane.showMessageDialog(
-                    this, 
-                    "É necessário definir a matriz primeiro", 
-                    "Gerar Matriz",
-                    0
-            );
-        }
+       matriz.setMatriz();
+       formataTabela(); 
     }//GEN-LAST:event_btnGerarMatrizActionPerformed
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
@@ -453,31 +396,22 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         txaResultado.setText(String.valueOf(matriz.somaMatriz()));        
     }//GEN-LAST:event_btnSomaTotalActionPerformed
 
-    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        dlgBuscarValor.setVisible(false);
-    }//GEN-LAST:event_btnCancelarActionPerformed
-
-    private void btnBuscarValorDialogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarValorDialogActionPerformed
-        if (txtValor.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(
-                    this, 
-                    "É necessário inserir um valor", 
-                    "Buscar Valor",
-                    0
-            );
-        } else {
-            dlgBuscarValor.setVisible(false);
-            txtValor.setText("");
-            txaResultado.setText(matriz.encontrarValor(Integer.parseInt(txtValor.getText())));
-        }
-    }//GEN-LAST:event_btnBuscarValorDialogActionPerformed
-
     private void btnSomaLinhasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaLinhasActionPerformed
-        txaResultado.setText(matriz.somaLinhas());
+        String textoSomaLinha = "";
+        int[] arraySomaLinha = matriz.somaLinhas();
+        for(int i = 0; i < arraySomaLinha.length; i++) {
+            textoSomaLinha += "Linha " + i + ": " + arraySomaLinha[i] + "\n";
+        }
+        txaResultado.setText(textoSomaLinha);
     }//GEN-LAST:event_btnSomaLinhasActionPerformed
 
     private void btnSomaColunasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaColunasActionPerformed
-        txaResultado.setText(matriz.somaColunas());
+        String textoSomaColuna = "";
+        int[] arraySomaColuna = matriz.somaColunas();
+        for(int i = 0; i < arraySomaColuna.length; i++) {
+            textoSomaColuna += "Linha " + i + ": " + arraySomaColuna[i] + "\n";
+        }
+        txaResultado.setText(textoSomaColuna);
     }//GEN-LAST:event_btnSomaColunasActionPerformed
 
     private void btnTranspostaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTranspostaActionPerformed
@@ -515,6 +449,11 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
         txaResultado.setText(matriz.isSimetrica());
     }//GEN-LAST:event_btnSimetricaActionPerformed
 
+    private void btnBuscarValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarValorActionPerformed
+       txaResultado.setText(matriz.encontrarValor(Integer.parseInt(txtValor.getText())));
+       txtValor.setText("");
+    }//GEN-LAST:event_btnBuscarValorActionPerformed
+
     public static void main(String args[]) {
 
         try {
@@ -542,9 +481,7 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscaValor;
-    private javax.swing.JButton btnBuscarValorDialog;
-    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnBuscarValor;
     private javax.swing.JButton btnDefinirMartiz;
     private javax.swing.JButton btnDiagPrincipa;
     private javax.swing.JButton btnDiagSecundaria;
@@ -559,13 +496,12 @@ public class AppMatrizDeInteiros extends javax.swing.JFrame {
     private javax.swing.JButton btnSubstituirValores;
     private javax.swing.JButton btnTransposta;
     private javax.swing.JButton btnTrocarValores;
-    private javax.swing.JDialog dlgBuscarValor;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblColunas;
     private javax.swing.JLabel lblLinhas;
     private javax.swing.JLabel lblOperacoes;
     private javax.swing.JLabel lblOrdemMatr;
-    private javax.swing.JLabel lblValor;
+    private javax.swing.JLabel lblValor1;
     private javax.swing.JPanel pnlOperacoes;
     private javax.swing.JPanel pnlOrdemMatriz;
     private javax.swing.JScrollPane splMatriz;
